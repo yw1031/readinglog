@@ -1,0 +1,27 @@
+<body>
+  <!-- 회원가입 화면 -->
+  <div id="signup-container">
+    <h2>📚 학급 독서기록장 회원가입</h2>
+    <input type="text" id="student-id" placeholder="학번 (예: 2023001)" />
+    <input type="text" id="student-name-signup" placeholder="이름" />
+    <input type="password" id="student-password-signup" placeholder="비밀번호" />
+    <button onclick="signup()">회원가입</button>
+    <p>이미 회원이신가요? <a href="#" onclick="showLogin()">로그인하기</a></p>
+  </div>
+
+  <!-- 로그인 화면 -->
+  <div id="login-container" style="display:none;">
+    <h2>📚 학급 독서기록장 로그인</h2>
+    <input type="text" id="student-id-login" placeholder="학번" />
+    <input type="password" id="student-password-login" placeholder="비밀번호" />
+    <button onclick="login()">로그인</button>
+    <p>처음이신가요? <a href="#" onclick="showSignup()">회원가입하기</a></p>
+  </div>
+
+  <!-- 기존 앱 화면 -->
+  <div id="app-container" style="display:none;">
+    <!-- ... (기존 코드 동일) -->
+  </div>
+
+  <script src="app.js"></script>
+</body>
